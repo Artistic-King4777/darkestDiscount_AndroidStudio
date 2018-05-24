@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pagan_magic">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="325dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price_Text"
+        android:textAllCaps="true"
+        android:textColor="#5757E5"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:background="#000000"
+        android:theme="@android:style/Theme.Translucent"/>
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:hint="@string/original_Price_Text"
+        android:inputType="numberDecimal"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:textColor="#27B83C"
+        android:textColorHint="#27B83C"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/discount_Rate"
+        android:layout_width="316dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="182dp"
+        android:text="@string/discount_Rate_Text"
+        android:textColor="#5757E5"
+        android:background="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView" />
+
+    <EditText
+        android:id="@+id/percentDiscount"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/discount_Rate"
+        android:layout_alignLeft="@+id/discount_Rate"
+        android:layout_marginBottom="194dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:hint="@string/enter_Percent_Text"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:textColorHint="#731100"
+        android:textColor="#731100"
+        android:textStyle="bold|italic"
+        android:inputType="numberDecimal"
+        android:layout_alignStart="@+id/discount_Rate"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/final_Price"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/discount_Rate"
+        android:layout_alignStart="@+id/discount_Rate"
+        android:layout_alignTop="@+id/discount_Rate"
+        android:layout_marginTop="180dp"
+        android:text="@string/final_Price_Text"
+        android:textAllCaps="true"
+        android:textSize="29sp"
+        android:textColor="#5757E5"
+        android:background="#000000"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/viewFinalPrice"-->
+        <!--android:layout_width="270dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="125dp"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textColor="#FF7C28"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--tools:ignore="OnClick" />-->
+
+    <Button
+        android:id="@+id/priceButton"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="420dp"
+        android:layout_alignStart="@+id/discount_Rate"
+        android:hint="@string/how_Much_Button_Text"
+        android:backgroundTint="#B6C1FF"
+        android:textColorHint="#731100"
+        android:textColor="#27B83C"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_alignLeft="@+id/discount_Rate" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Darkest Discount</string>
+    <string name="original_Price_Text">original price $$</string>
+    <string name="discount_Rate_Text">Discount Rate</string>
+    <string name="enter_Percent_Text">enter the percentage %</string>
+    <string name="final_Price_Text">Final Price!!</string>
+    <string name="how_Much_Button_Text">How Much Do I Pay ?</string>
+    <string name="price_Text">Price:</string>
+</resources>
